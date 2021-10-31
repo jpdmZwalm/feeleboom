@@ -1,17 +1,17 @@
 <template>
   <section class="top-container">
     <header class="showcase">
-      <h1>Over FeelEBoom</h1>
+      <h1>Contact</h1>
     </header>
     <div class="content"> <!--TODO-->
-      Over FeelEBoom
+      Contact
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "TheIntroductiePage"
+  name: "TheContactPage"
 }
 </script>
 

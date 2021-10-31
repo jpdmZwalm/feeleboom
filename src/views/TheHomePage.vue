@@ -4,17 +4,17 @@
       <h1>Feel E Boom</h1>
     </header>
     <div class="content"> <!--TODO-->
-      Tekst_1_HomePage
+      Wanneer je in contact bent met je ziel dan stroomt het leven, je wordt zichtbaar, je bent bewust van het groter geheel,
+      je hart is open en je kan het leven ontvangen in zijn volle potentie.
     </div>
     <div class="top-box top-box-a">
-      <h4>Kristien Reynaert</h4>
-      <p>Over mij.</p> <!--TODO-->
-      <a href="#" class="btn">Meer info</a> <!--TODO-->
+      <h4>FeelEBoom</h4>
+      <p>Over FeelEBoom</p> <!--TODO-->
+      <router-link class="btn" :to="{ name: 'over'}">Meer info</router-link>
     </div>
     <div class="top-box top-box-b">
-      <h4>Contact</h4>
-      <p>Beerlegemsebaan 74</p>
-      <p>9630 Zwalm</p>
+      <h4>Actueel</h4>
+      <p>Uitleg over de huidige reeks</p>
       <a href="#" class="btn">Meer info</a> <!--TODO-->
     </div>
   </section>
@@ -28,6 +28,17 @@ export default {
 </script>
 
 <style scoped>
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+        'showcase showcase showcase showcase top-box-a'
+        'showcase showcase showcase showcase top-box-b'
+        'content  content  content  content  content';
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* Area  Showcase */
 .showcase {
   grid-area: showcase;
@@ -60,7 +71,6 @@ export default {
 .content {
   grid-area: content;
   box-shadow: var(--shadow);
-  margin-right: 50px;
 }
 
 /* Area  Top Box */

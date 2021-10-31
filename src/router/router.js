@@ -6,7 +6,8 @@ Vue.use(Router);
 const router = new Router({
   //DOCUMENTATION mode:"history" => geen # in de url
   mode: "history",
-  base: process.env.BASE_URL, // "/"
+  //base: process.env.BASE_URL, // "/"
+  base: "/feeleboom/",
   routes: [
     {
       path: "/",
@@ -16,11 +17,39 @@ const router = new Router({
         import(/* webpackChunkName: "person" */ "@/views/TheHomePage.vue")
     },
     {
-      path: "/TheOverPage",
+      path: "/lessen",
+      name: "lessen",
+      component: () =>
+          // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
+          import(/* webpackChunkName: "person" */ "@/views/TheLessenPage.vue")
+    },
+    {
+      path: "/inschrijven",
+      name: "inschrijven",
+      component: () =>
+          // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
+          import(/* webpackChunkName: "person" */ "@/views/TheInschrijvenPage.vue")
+    },
+    {
+      path: "/wegwijzer",
+      name: "wegwijzer",
+      component: () =>
+          // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
+          import(/* webpackChunkName: "person" */ "@/views/TheWegwijzerPage.vue")
+    },
+    {
+      path: "/over",
       name: "over",
       component: () =>
           // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
           import(/* webpackChunkName: "person" */ "@/views/TheOverPage.vue")
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () =>
+          // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
+          import(/* webpackChunkName: "person" */ "@/views/TheContactPage.vue")
     }
   ]
 });

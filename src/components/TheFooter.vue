@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>GridBiz &copy; 2021</p>
+    <p>JPDM &copy;2021</p>
   </footer>
 </template>
 
