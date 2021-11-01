@@ -38,6 +38,13 @@ const router = new Router({
           import(/* webpackChunkName: "person" */ "@/views/TheWegwijzerPage.vue")
     },
     {
+      path: "/fotos",
+      name: "fotos",
+      component: () =>
+          // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
+          import(/* webpackChunkName: "person" */ "@/views/TheFotoPage.vue")
+    },
+    {
       path: "/over",
       name: "over",
       component: () =>

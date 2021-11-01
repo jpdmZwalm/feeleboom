@@ -9,7 +9,8 @@
     </div>
     <div class="top-box top-box-a">
       <h4>FeelEBoom</h4>
-      <p>Over FeelEBoom</p> <!--TODO-->
+      <p>Over FeelEBoom</p>
+      <img src="../assets/img/sisters.png">
       <router-link class="btn" :to="{ name: 'over'}">Meer info</router-link>
     </div>
     <div class="top-box top-box-b">

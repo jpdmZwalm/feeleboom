@@ -16,6 +16,7 @@
       <li><a><router-link :to="{ name: 'lessen'}">Lessen</router-link></a></li>
       <li><a><router-link :to="{ name: 'inschrijven'}">Inschrijven</router-link></a></li>
       <li><a><router-link :to="{ name: 'wegwijzer'}">Wegwijzer</router-link></a></li>
+      <li><a><router-link :to="{ name: 'fotos'}">Fotos</router-link></a></li>
       <li><a><router-link :to="{ name: 'over'}">Over FeelEBoom</router-link></a></li>
       <li><a><router-link :to="{ name: 'contact'}">Contact</router-link></a></li>
     </ul>
@@ -95,7 +96,7 @@ img.resize {
   left: 105%;
   margin-left: -60px;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 1.3s;
 }
 
 .tooltip .tooltiptext::after {
