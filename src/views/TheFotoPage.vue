@@ -1,37 +1,42 @@
 <template>
   <section class="top-container">
+    <header class="showcase">
+      <h1>Fotos</h1>
+    </header>
     <div class="content">
-      De foto's moeten allemaal dezelfde hoogte/breedte verhouding hebben.
-      Nu genomen van de oude site, maar daar zijn ze in rage resolutie
-      <p>Uitleg</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/kristien2.png">
-      <p>Kristien</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/tuin.png">
-      <p>De tuin</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/schilderij.png">
-      <p>Schilderij</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/zaal1.png">
-      <p>De zaal 1</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/zaal2.png">
-      <p>De zaal 2</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/zaal3.png">
-      <p>De zaal 3</p>
-    </div>
-    <div class="content">
-      <img src="../assets/img/fotos/zaal4.png">
-      <p>De zaal 4</p>
+      <div class="foto">
+        De foto's moeten allemaal dezelfde hoogte/breedte verhouding hebben.
+        Nu genomen van de oude site, maar daar zijn ze in rage resolutie
+        <p>Uitleg</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/kristien2.png">
+        <p>Kristien</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/tuin.png">
+        <p>De tuin</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/schilderij.png">
+        <p>Schilderij</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/zaal1.png">
+        <p>De zaal 1</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/zaal2.png">
+        <p>De zaal 2</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/zaal3.png">
+        <p>De zaal 3</p>
+      </div>
+      <div class="foto">
+        <img src="../assets/img/fotos/zaal4.png">
+        <p>De zaal 4</p>
+      </div>
     </div>
   </section>
 </template>
@@ -43,14 +48,15 @@ export default {
 </script>
 
 <style scoped>
-/* Top Container */
-.top-container {
+.content {
+  grid-area: content;
+  box-shadow: var(--shadow);
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.content {
+.foto {
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -58,13 +64,13 @@ export default {
   box-shadow: var(--shadow);
 }
 
-.content p {
+.foto p {
   margin: 0px;
   padding: 5px;
   box-shadow: var(--shadow);
 }
 
-.content img {
+.foto img {
   width: 100%;
   height: auto;
 }

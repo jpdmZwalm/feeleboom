@@ -31,48 +31,13 @@ export default {
 </script>
 
 <style scoped>
-/* Top Container */
-.top-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-        'showcase'
-        'content';
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto 2fr;
-}
-
-/* Area  Showcase */
-.showcase {
-  grid-area: showcase;
-  padding-left: 1rem;
-  padding-right: 5rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  box-shadow: var(--shadow);
-}
-
-.showcase h1 {
-  font-size: 4rem;
-  font-family: "Bookman Old Style";
-  font-weight: lighter;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--letter);
-}
-
-.showcase p {
-  font-size: 2.0rem;
-  margin-top: 0;
-  color: var(--letter);
-}
-
 .content {
+  box-shadow: none;
   grid-area: content;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto 1fr;
-  margin: 0px;
+  padding: 0px;
 }
 
 .content span {

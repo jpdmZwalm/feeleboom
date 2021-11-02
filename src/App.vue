@@ -27,16 +27,6 @@ export default {
 </script>
 
 <style>
-/*
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-*/
 /* CSS Variables */
 :root {
   --primary: #ddd;
@@ -78,6 +68,42 @@ img {
   grid-template-rows: auto 1fr auto;
   width: 98vw;
   height: 97vh;
+}
+
+/* Area  Showcase */
+.showcase {
+  grid-area: showcase;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 3rem;
+  font-family: "Bookman Old Style";
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--letter);
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+        'showcase'
+        'content';
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 2fr;
+}
+
+.content {
+  grid-area: content;
+  padding: 10px;
+  box-shadow: var(--shadow);
 }
 
 /* Footer */

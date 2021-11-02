@@ -38,6 +38,7 @@ export default {
         'showcase showcase showcase showcase top-box-b'
         'content  content  content  content  content';
   grid-template-columns: repeat(5, 1fr);
+  box-shadow: var(--shadow);
 }
 
 /* Area  Showcase */
@@ -46,13 +47,10 @@ export default {
   background: url(../assets/img/herbeumont.jpg);
   background-size: cover;
   background-position: top;
-  padding-right: 5rem;
-  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  box-shadow: var(--shadow);
 }
 
 .showcase h1 {
@@ -60,12 +58,6 @@ export default {
   font-family: "Bookman Old Style";
   font-weight: lighter;
   margin-bottom: 0;
-  color: var(--letter);
-}
-
-.showcase p {
-  font-size: 2.0rem;
-  margin-top: 0;
   color: var(--letter);
 }
 

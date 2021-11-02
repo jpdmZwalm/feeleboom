@@ -14,7 +14,7 @@
         </router-link>
       </li>
       <li><a><router-link :to="{ name: 'lessen'}">Lessen</router-link></a></li>
-      <li><a><router-link :to="{ name: 'inschrijven'}">Inschrijven</router-link></a></li>
+      <li><a><router-link :to="{ name: 'praktisch'}">Praktisch</router-link></a></li>
       <li><a><router-link :to="{ name: 'wegwijzer'}">Wegwijzer</router-link></a></li>
       <li><a><router-link :to="{ name: 'fotos'}">Fotos</router-link></a></li>
       <li><a><router-link :to="{ name: 'over'}">Over FeelEBoom</router-link></a></li>

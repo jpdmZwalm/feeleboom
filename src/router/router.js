@@ -5,9 +5,9 @@ Vue.use(Router);
 
 const router = new Router({
   //DOCUMENTATION mode:"history" => geen # in de url
-  mode: "history",
-  //base: process.env.BASE_URL, // "/"
-  base: "/feeleboom/",
+  mode: "hash",
+  base: process.env.BASE_URL, // "/"
+  //base: "/feeleboom/",
   routes: [
     {
       path: "/",
@@ -24,11 +24,11 @@ const router = new Router({
           import(/* webpackChunkName: "person" */ "@/views/TheLessenPage.vue")
     },
     {
-      path: "/inschrijven",
-      name: "inschrijven",
+      path: "/praktisch",
+      name: "praktisch",
       component: () =>
           // DOCUMENTATION webpackChunkName : Lazy Load (Code Splitting) : zelf de naam van de .js file kiezen
-          import(/* webpackChunkName: "person" */ "@/views/TheInschrijvenPage.vue")
+          import(/* webpackChunkName: "person" */ "@/views/ThePraktischPage.vue")
     },
     {
       path: "/wegwijzer",
